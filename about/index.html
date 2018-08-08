@@ -26,7 +26,7 @@
 <!-- Add to home screen for Safari on iOS -->
  <meta name="apple-mobile-web-app-capable" content="yes">
  <meta name="apple-mobile-web-app-status-bar-style" content="black">
- <meta name="apple-mobile-web-app-title" content="Peace">
+ <meta name="apple-mobile-web-app-title" content="ZeroingIn">
  <link rel="apple-touch-icon" href="/images/icons/apple-touch-icon.png">
 
 <script>
@@ -210,12 +210,36 @@ window.addEventListener('beforeinstallprompt', event => {
 
 <body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
 
+<!-- Add to slide gesture for Safari on iOS -->
+  
+  <!-- 引入 jQuery Mobile 库 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+  
+
   
   
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div id="main_page" class="container sidebar-position-left page-post-detail">
+
+    <script>
+      var myElement = document.getElementById('main_page');
+
+      // create a simple instance
+      // by default, it only adds horizontal recognizers
+      var mc = new Hammer(myElement);
+
+      // listen to events...
+      mc.on("pan panstart panend pancancel panleft panright", function(ev) {
+          console.log(ev);
+          if(ev.type == "panright" && ev.distance >= 100 && ev.angle > 0 && ev.angle <= 10) {
+              history.back();
+          }
+          // myElement.textContent = ev.type +" gesture detected.";
+      });
+    </script>
+
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -775,7 +799,7 @@ window.addEventListener('beforeinstallprompt', event => {
   
 
 <script>if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js?t=1533722906021')
+  navigator.serviceWorker.register('/sw.js?t=1533750746274')
     .then(function () {console.log('ServiceWorker Register Successfully.')})
     .catch(function (e) {console.error(e)});
 }
