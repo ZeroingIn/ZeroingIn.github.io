@@ -5,9 +5,9 @@
   <subtitle>宁愿深爱无归路</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://zeroingin.cn/"/>
+  <link href="https://zeroingin.cn/"/>
   <updated>2018-08-07T07:20:20.501Z</updated>
-  <id>http://zeroingin.cn/</id>
+  <id>https://zeroingin.cn/</id>
   
   <author>
     <name>ZeroingIn</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://zeroingin.cn/posts/1243066710/"/>
-    <id>http://zeroingin.cn/posts/1243066710/</id>
+    <link href="https://zeroingin.cn/posts/1243066710/"/>
+    <id>https://zeroingin.cn/posts/1243066710/</id>
     <published>2018-08-05T02:46:20.804Z</published>
     <updated>2018-08-07T07:20:20.501Z</updated>
     
@@ -29,10 +29,10 @@
     
     </summary>
     
-      <category term="test" scheme="http://zeroingin.cn/categories/test/"/>
+      <category term="test" scheme="https://zeroingin.cn/categories/test/"/>
     
     
-      <category term="test" scheme="http://zeroingin.cn/tags/test/"/>
+      <category term="test" scheme="https://zeroingin.cn/tags/test/"/>
     
   </entry>
   
