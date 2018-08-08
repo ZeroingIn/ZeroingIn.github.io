@@ -11,5 +11,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap https://zeroingin.cn/sitemap.xml
-Sitemap https://zeroingin.cn/baidusitemap.xml
+Sitemap https://www.zeroingin.cn/sitemap.xml
+Sitemap https://www.zeroingin.cn/baidusitemap.xml

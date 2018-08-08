@@ -21,6 +21,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 
+<link rel="manifest" href="/manifest.json">
+
+<!-- Add to home screen for Safari on iOS -->
+ <meta name="apple-mobile-web-app-capable" content="yes">
+ <meta name="apple-mobile-web-app-status-bar-style" content="black">
+ <meta name="apple-mobile-web-app-title" content="Peace">
+ <link rel="apple-touch-icon" href="/images/icons/apple-touch-icon.png">
+ <link rel="shortcut icon" href="<%= config.root %>images/icons/favicon.ico">
+
+<script>
+window.addEventListener('beforeinstallprompt', event => {
+  event.userChoice.then(result => {console.log(result.outcome)
+  })
+})
+</script>
+
 
 
 
@@ -82,8 +98,6 @@
   <link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg?v=6.3.0" color="#222">
 
 
-
-  <meta name="msapplication-config" content="/images/icons/browserconfig.xml">
 
 
 
@@ -762,7 +776,7 @@
   
 
 <script>if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js?t=1533703870687')
+  navigator.serviceWorker.register('/sw.js?t=1533719987705')
     .then(function () {console.log('ServiceWorker Register Successfully.')})
     .catch(function (e) {console.error(e)});
 }
