@@ -209,9 +209,7 @@ window.addEventListener('beforeinstallprompt', event => {
 
 <body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
 
-<!-- Add to slide gesture for Safari on iOS -->
-  
-  <!-- 引入 jQuery Mobile 库 -->
+  <!-- Add to slide gesture for Safari on iOS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
   
 
@@ -225,18 +223,12 @@ window.addEventListener('beforeinstallprompt', event => {
 
     <script>
       var myElement = document.getElementById('main_page');
-
-      // create a simple instance
-      // by default, it only adds horizontal recognizers
       var mc = new Hammer(myElement);
-
-      // listen to events...
       mc.on("pan panstart panend pancancel panleft panright", function(ev) {
           console.log(ev);
           if(ev.type == "panright" && ev.distance >= 100 && ev.angle > 0 && ev.angle <= 10) {
               history.back();
           }
-          // myElement.textContent = ev.type +" gesture detected.";
       });
     </script>
 
@@ -746,7 +738,7 @@ window.addEventListener('beforeinstallprompt', event => {
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
@@ -960,7 +952,7 @@ window.addEventListener('beforeinstallprompt', event => {
   
 
 <script>if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js?t=1533750746274')
+  navigator.serviceWorker.register('/sw.js?t=1580962748541')
     .then(function () {console.log('ServiceWorker Register Successfully.')})
     .catch(function (e) {console.error(e)});
 }
