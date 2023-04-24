@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>ZeroingIn的记录</title>
+  
+  <subtitle>宁愿深爱无归路</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://zeroingin.cn/"/>
+  <updated>2018-08-07T07:20:20.000Z</updated>
+  <id>https://zeroingin.cn/</id>
+  
+  <author>
+    <name>ZeroingIn</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://zeroingin.cn/posts/1243066710/"/>
+    <id>https://zeroingin.cn/posts/1243066710/</id>
+    <published>2022-01-15T07:35:26.999Z</published>
+    <updated>2018-08-07T07:20:20.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; rel=&quot;external nofollow noopener noreferrer&quot; target=&quot;_blank&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="test" scheme="https://zeroingin.cn/categories/test/"/>
+    
+    
+      <category term="test" scheme="https://zeroingin.cn/tags/test/"/>
+    
+  </entry>
+  
+</feed>
